@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: #333;
+}
+#fullpage .section:nth-child(1){background-color: red;}
+#fullpage .section:nth-child(2){background-color: green;}
+#fullpage .section:nth-child(3){background-color: blue;}
+#fullpage .section:nth-child(4){background-color: orange;}
