@@ -17,34 +17,36 @@ a:link , a:visited{
     align-items: center;
     justify-content: center;    
     
-}
-  #fullpage .section h1 {
-            font-size: 4rem;
-            color: darkblue;
-            opacity: 0;
-            animation-name: fadeInH1;
-            animation-duration: 1.5s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-            transform: translateY(20px);
-}
-
-        @keyframes fadeInH1 {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+} 
 
 #fullpage .section:nth-child(2){
     background: url(./img/profile.jpg) center/cover;
 }
 #fullpage .section:nth-child(3){}
-#fullpage .section:nth-child(4){background: orange;}
+#fullpage .section:nth-child(4){ 
+    /* background-color: orange; */
+    padding: 20px;
+}
+
+#fullpage .section:nth-child(4) .fp-tableCell{
+    display: flex;
+    flex-wrap: wrap;
+}
+#fullpage .section:nth-child(4) h1{
+    width: 100%;
+    margin-top:42px;
+    transform: translate(0,0);
+}
+#fullpage .section:nth-child(4) .article{
+    width: 47%;    
+    margin:1%;
+    border:1px solid red;
+}
+#fullpage .section:nth-child(4) .article img{
+    border-radius: 12px;
+    width:250px;
+}
+
 .menu{
     width: 100%;
     height: 38px;
@@ -73,7 +75,7 @@ a:link , a:visited{
     align-self: center;
 }
 #fullpage .section:nth-child(3) .wrap{
-    width: 80%;
+    width: 90%;
     min-width: 380px;
     margin-top: 120px;
 }

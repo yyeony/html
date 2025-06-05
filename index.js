@@ -5,7 +5,17 @@
         navigation:true,
         navigationPosition:'right',
         menu:'menu',
-        anchors:['1','2','3','4']
+        anchors:['1','2','3','4'],
+        afterLoad:function(origin, destination, direction, trigger){
+            if(destination.index==3){
+                $.fn.fullpage.setAutoScrolling(false)
+                $.fn.fullpage.setAutoScrolling(false)
+                $.fn.fullpage.setAutoScrolling(false)
+            }else{
+               $.fn.fullpage.setAutoScrolling(true)
+            };
+            
+        }
     });
 
     $('.d1').colorbox({rel:'gal'})
